@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+
+    width: 82rem;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+#timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 32rem;
+}
+
+#timer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+
+#controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#controls button:hover path {
+    fill: #02799D;
+}
+
+#controls .inactive path,
+#controls button:hover.inactive path {
+    fill: #CCCCCC;
+}
+
+#sounds {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 3.2rem;
+
+    width: 30.8rem;
+}
+
+#sounds button {
+    border: none;
+    border-radius: 2.4rem;
+
+    height: 15.2rem;
+    width: 13.8rem;
+    background-color: #E1E1E6;
+
+    cursor: pointer;
+}
+
+#sounds button:hover path {
+    /* background-color: #c9c9ce; */
+    fill: #02799D;
+}
+
+/* Botões selecionados */
+#sounds .selected {
+    background-color: #02799D;
+}
+
+#sounds .selected path {
+    fill: white;
+}
+
+#sounds button:hover.selected path {
+    fill: #000000;
+}
